@@ -160,7 +160,7 @@ alias plusx="chmod +x"
 # Python
 alias pip=pip3
 alias python=python3.9
-alias activate="source ./venv/bin/activate"
+alias activate="source ./venv/bin/activate.csh"
 
 # Custom Apt
 alias app="sudo apt-get"
