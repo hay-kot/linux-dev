@@ -23,7 +23,10 @@ git config --global user.email "hay-kot@pm.me"
 git config --global user.name "Hayden"
 
 # Python Venv Stuff
-sudo apt-get install python3.venv
+sudo apt-get update
+sudo apt-get install libpython3-dev
+sudo apt-get install python3-venv
+python3.8 -m venv whatever
 
 # Node 
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
