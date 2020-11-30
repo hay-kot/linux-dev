@@ -1,0 +1,7 @@
+ default_context:
+    name: Hayden
+    fullname: "Hayden Kotelman"
+    full_name: "Hayden Kotelman"
+    email: "haykot@pm.me"
+    github_username: hay-kot
+cookiecutters_dir: "~/linux-dev/dotfiles/.cookiecutter/cookiecutters"

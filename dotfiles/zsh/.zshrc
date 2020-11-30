@@ -144,6 +144,7 @@ autoload -U compinit && compinit        # zsh-completions
 
 
 # CUSTOM ALIASES
+export COOKIECUTTER_CONFIG="/home/hayden/linux-dev/dotfiles/.cookiecutter/cookiecutter.yaml"
 
 SAVEHIST=10000     #save upto 50,000 lines in history. oh-my-zsh default is 10,000
 #setopt hist_ignore_all_dups     # dont record duplicated entries in history during a single session
