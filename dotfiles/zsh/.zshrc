@@ -183,6 +183,30 @@ alias k="k -h"						# show human readable filesizes, in kb, mb etc
 
 # CUSTOM FUNCTIONS
 
+# Use lf to switch directories and bind it to ctrl-o
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+
+# Opens Last lf Directory in VSCode
+lfcode () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && code "$dir"
+    fi
+}
+bindkey -s '^[c' 'lfcode\n'
+
 # cheat sheets (github.com/chubin/cheat.sh), find out how to use commands
 # example 'cheat tar'
 # for language specific question supply 2 args first for language, second as the question
