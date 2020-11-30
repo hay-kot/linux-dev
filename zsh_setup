@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+# installation
+if not type zsh; then 
+    sudo apt-get update && sudo apt-get -y install zsh
+else
+    echo ""
+fi
+
+
+# Copy Zshrc Reference Template
+echo "Starting..."
+
+rm ~/.zshrc
+cp ./templates/.zshrc ~/.zshrc
+
+echo "Stopping..."

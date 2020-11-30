@@ -1,0 +1,30 @@
+#!/usr/bin/env zsh
+
+sudo apt update
+
+# Tree Utility
+sudo apt install tree
+
+# TheFuck
+sudo apt install python3-dev python3-pip python3-setuptools
+sudo pip3 install thefuck
+
+# Colored cat 
+sudo apt install bat
+
+# Github CLI
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
+
+# Set Git Username / Email
+git config --global user.email "hay-kot@pm.me"
+git config --global user.name "Hayden"
+
+# Python Venv Stuff
+sudo apt-get install python3.venv
+
+# Node 
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs

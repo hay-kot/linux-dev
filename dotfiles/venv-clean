@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+python3 -m venv venv 
+set -e
+source ./venv/bin/activate
+pip install --upgrade pip
