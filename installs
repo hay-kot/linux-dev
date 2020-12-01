@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
 sudo apt update
+sudo apt-get update
+
 
 # Tree Utility
 sudo apt install tree
@@ -15,7 +17,6 @@ sudo apt install bat
 # Github CLI
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
-sudo apt update
 sudo apt install gh
 
 # Set Git Username / Email
@@ -23,7 +24,6 @@ git config --global user.email "hay-kot@pm.me"
 git config --global user.name "Hayden"
 
 # Python Venv Stuff
-sudo apt-get update
 sudo apt-get install libpython3-dev
 sudo apt-get install python3-venv
 python3.8 -m venv whatever
@@ -35,5 +35,4 @@ sudo apt-get install -y nodejs
 # LF File Manager - A Must Have
 echo 'deb http://download.opensuse.org/repositories/home:/Provessor/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:Provessor.list
 curl -fsSL https://download.opensuse.org/repositories/home:Provessor/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_Provessor.gpg > /dev/null
-sudo apt update
 sudo apt install lf
