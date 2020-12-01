@@ -158,9 +158,9 @@ alias wget="cd ~/Downloads; wget"
 alias plusx="chmod +x"
 
 # Python
-alias pip=pip3
-alias python=python3.9
 alias activate="source ./venv/bin/activate"
+# alias pip=pip3
+# alias python=python3.9
 
 # Custom Apt
 alias app="sudo apt-get"
