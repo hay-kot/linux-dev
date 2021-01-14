@@ -154,7 +154,7 @@ SAVEHIST=10000     #save upto 50,000 lines in history. oh-my-zsh default is 10,0
 
 # Start stuff that downloads in ~/Downloads
 alias wget="cd ~/Downloads; wget"
-alias myzsh-update="git pull ~/linux-dev/ && zsh"
+alias zsh-pull="cd /home/hayden/linux-dev; git pull; cd -; zsh"
 
 # Shortcut to making exicutable.
 alias plusx="chmod +x"
