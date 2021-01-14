@@ -86,6 +86,7 @@ plugins=(
     screen
     systemd
     k
+    poetry
     # zsh-wakatime          # enable if you use wakatime with 'https://github.com/wbingli/zsh-wakatime'
     # zsh-syntax-highlighting   # Runs horrible on WSL
     )
@@ -158,7 +159,7 @@ alias wget="cd ~/Downloads; wget"
 alias plusx="chmod +x"
 
 # Python
-alias activate="source ./venv/bin/activate"
+alias activate="source ./.venv/bin/activate"
 # alias pip=pip3
 # alias python=python3.9
 

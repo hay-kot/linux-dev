@@ -26,7 +26,6 @@ git config --global user.name "Hayden"
 # Python Venv Stuff
 sudo apt-get install libpython3-dev
 sudo apt-get install python3-venv
-python3.8 -m venv whatever
 
 # Node 
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -35,4 +34,5 @@ sudo apt-get install -y nodejs
 # LF File Manager - A Must Have
 echo 'deb http://download.opensuse.org/repositories/home:/Provessor/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:Provessor.list
 curl -fsSL https://download.opensuse.org/repositories/home:Provessor/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_Provessor.gpg > /dev/null
+sudo apt update
 sudo apt install lf
