@@ -91,8 +91,16 @@ plugins=(
     # zsh-syntax-highlighting   # Runs horrible on WSL
     )
 #plugins+=(zsh-nvm)
-
 source $ZSH/oh-my-zsh.sh
+
+## MAC OS
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 
 # User configuration
 
@@ -145,7 +153,7 @@ autoload -U compinit && compinit        # zsh-completions
 
 
 # CUSTOM ALIASES
-export COOKIECUTTER_CONFIG="/home/hayden/linux-dev/dotfiles/.cookiecutter/cookiecutter.yaml"
+export COOKIECUTTER_CONFIG="~/linux-dev/dotfiles/cookiecutter.yaml"
 
 SAVEHIST=10000     #save upto 50,000 lines in history. oh-my-zsh default is 10,000
 #setopt hist_ignore_all_dups     # dont record duplicated entries in history during a single session
